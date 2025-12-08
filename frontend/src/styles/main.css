@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: #f7f7f9;
+  color: #1f2933;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 16px 24px;
+  background-color: #1f2933;
+  color: #fff;
+}
+
+.top-bar {
+  display: flex;
+  gap: 16px;
+  padding: 16px 24px;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 320px;
+  max-width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+}
+
+.sort-dropdown select {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+}
+
+.content-layout {
+  flex: 1;
+  display: flex;
+  padding: 0 24px 24px;
+  gap: 16px;
+}
+
+.sidebar {
+  width: 260px;
+}
+
+.filter-panel {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #e0e4ea;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+}
+
+.filter-panel h3 {
+  margin-top: 0;
+}
+
+.filter-section {
+  margin-bottom: 12px;
+}
+
+.filter-section h4 {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.filter-section label {
+  display: block;
+  font-size: 0.85rem;
+}
+
+.range-inputs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.range-inputs input {
+  width: 80px;
+}
+
+.main-content {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e0e4ea;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.sales-table th,
+.sales-table td {
+  border-bottom: 1px solid #e0e4ea;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.sales-table th {
+  background-color: #f3f4f6;
+}
+
+.no-results {
+  padding: 16px;
+  text-align: center;
+}
+
+.pagination {
+  margin-top: auto;
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status {
+  padding: 6px 0;
+}
+
+.status.error {
+  color: #b42318;
+}
